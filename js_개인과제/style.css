@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  height: 2000px;
+  background-color: #141414;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/9737377e-a430-4d13-ad6c-874c54837c49/945eec79-6856-4d95-b4c6-83ff5292f33d/KR-ko-20220111-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+section::before {
+  content: "";
+  background: linear-gradient(to top, #141414, transparent);
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-family: sans-serif; /** 넷플릭스 글씨체 **/
+}
+
+.search {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* top: 70%; */
+  margin-top: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  padding-right: 55px;
+  margin-top: 700px;
+}
+
+.search-button {
+  display: inline-block;
+  padding: 1.5px;
+  background-color: #e50914;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #c6050e;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* justify-content: center; */
+  justify-items: center;
+  align-items: start;
+}
+
+.moive-card {
+  /* margin: 20px;
+  padding: 20px; */
+  width: 300px;
+  /* justify-self: center; */
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  /* display: inline-block; */
+  text-align: center;
+}
+
+.moive-card img {
+  width: 100%;
+  /* max-width: 100%; */
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.moive-card .content {
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+p {
+  color: white;
+}
+h3 {
+  color: white;
+}
